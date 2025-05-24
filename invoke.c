@@ -15,8 +15,8 @@ int main() {
     // Entscheidung: welchen Befehl ausführen
     if (strcmp(env, "date") == 0) {
         execlp("date", "date", (char *)NULL);
-    } else if (strcmp(env, "calendar") == 0) {
-        execlp("calendar", "calendar", (char *)NULL);
+    } else if (strcmp(env, "cal") == 0) {
+        execlp("cal", "cal", (char *)NULL);
     } else {
         fprintf(stderr, "Unbekannter Wert für TOBEINVOKED: %s\n", env);
         return 1;
